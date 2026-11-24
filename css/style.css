@@ -35,6 +35,8 @@ p{
 h2{
     text-align: center;
     font-size: 1.5rem;
+    
+    
 
 }
 header nav ul{
@@ -50,8 +52,9 @@ header nav ul{
 .articles li a:hover,
    .articles li a:focus,
   .articles li a:active {
-color: rgb(181, 153, 204);
+color: rgb(132, 77, 184);
 text-decoration: underline;
+align-self: focus;
   }
   .articles li:first-child(even){
     background-color: brown;
@@ -59,11 +62,26 @@ text-decoration: underline;
 
   img{
 
-    background: rgba(252, 252, 252, 0.795); 
+    background: rgba(45, 26, 101, 0.795); 
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
     padding: 10px;
   }
   
+  .icons-row {
+  display: flex;          
+  flex-direction: row; 
+  align-items: center; 
+  gap: 16px; ;  
+}
+ a {
+color: rgb(124, 124, 228);
+ }
+ a:hover {
+    color: rgb(45, 26, 63);
+ }
+ a:focus {
+outline: rgb(62, 7, 44);
+ }
 /* пример псевдоэлементов*/
 h2::before{
     content:"new";
@@ -71,5 +89,49 @@ h2::before{
     color: black;
     margin-left: 10px;
 }
+ nav a{
+    color: rgb(81, 136, 95);
+ }
+
+nav a:hover{
+    color: cornflowerblue;
+}
+nav a:focus{
+color: rgb(10, 114, 118);
+}
+.articles li:nth-child(odd){
+    background-color: ; color: rgb(130, 130, 247);
+}
+.articles li:nth-child(even){
+    background-color: rgb(144, 119, 167);
+}
+.articles li:nth-child(4) ::after{
+    content: "важно!";
+    color: rgb(155, 49, 49);
+    border: 2px solid rgb(142, 67, 82);
+    border-radius: 4px;
+    padding: 2px ;
+    margin-left: 6px;
+    font-size: 14px;
+
+}
+.article p::first-line {
+    letter-spacing: 6px;
+}
+ p:lang(en) {
+    font-family:'Lora', Georgia, serif;
+    font-style: italic;
+    color: rgb(39, 58, 94);
+}
+.about p {
+    color: rgb(38, 10, 66);
+    
+}
+footer img {
+    border: 1px rgb(215, 225, 243);
+    padding: 3px;
+    border-radius: 5px;
+}
+
 
 
